@@ -1,0 +1,9 @@
+@import "./styles/mixins.scss";
+
+.screen-container {
+  padding: 2.5vw 7vw;
+
+  @include medium {
+    padding: 2.5vw 5vw;
+  }
+}

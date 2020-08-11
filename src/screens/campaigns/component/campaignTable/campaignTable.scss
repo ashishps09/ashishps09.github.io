@@ -1,0 +1,56 @@
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/mixins.scss";
+
+.campaigns-table-container {
+  overflow: auto;
+  margin-top: 2.5rem;
+  width: 100%;
+  font-weight: normal;
+  background: $grey-3;
+  color: $grey-2;
+  word-break: break-all;
+  word-wrap: break-word;
+
+  .grid-row {
+    @extend .campaigns-table-grid;
+  }
+  .grid-row.grid-header-row {
+    & > div {
+      font-size: 16px;
+      font-weight: bold;
+      padding: 12px 0px;
+    }
+  }
+  .grid-row.grid-body-row {
+    font-size: 14px;
+    background: white;
+    border-bottom: 1px solid $grey-3;
+    & > div {
+      padding: 20px 0px;
+      .grid-large-font {
+        font-size: 16px;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .grid-light-color {
+        opacity: 0.7;
+      }
+    }
+  }
+  .grid-row.grid-body-row:last-child {
+    border-bottom: 0px;
+  }
+}
+
+.campaigns-table-grid {
+  padding: 0px 2rem;
+  @include medium {
+    padding: 0px 1rem;
+  }
+  display: grid;
+  grid-template-columns: 15% 30% 12% auto;
+  grid-gap: 10px;
+}

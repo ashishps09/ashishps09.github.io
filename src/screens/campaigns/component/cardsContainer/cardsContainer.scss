@@ -1,0 +1,31 @@
+@import "../../../../styles/colors.scss";
+
+.campaigns-cards-container {
+  overflow: auto;
+  margin-top: 2.5rem;
+  width: 100%;
+  font-weight: normal;
+  color: $grey-2;
+  word-break: break-all;
+  word-wrap: break-word;
+  .campaigns-cards {
+    width: 400px;
+    max-width: 100%;
+    margin: 10px;
+    // background: $grey-3;
+    .check-detail {
+      max-width: 300px;
+    }
+    .grid-large-font {
+      font-size: 16px;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .grid-light-color {
+      opacity: 0.7;
+    }
+  }
+}

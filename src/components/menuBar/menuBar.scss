@@ -1,0 +1,28 @@
+@import "../../styles/colors.scss";
+@import "../../styles/mixins.scss";
+
+.menu-container {
+  border-bottom: 1px solid $grey-3;
+  @include small {
+    flex-wrap: wrap;
+    word-break: break-all;
+  }
+  .menu {
+    font-size: 18px;
+    color: $grey;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    @include small {
+      flex-grow: 1;
+      border: 2px solid $grey-3;
+    }
+    @include xs {
+      width: 100%;
+    }
+  }
+
+  .menu-selected {
+    color: $green3;
+    border-bottom: 4px solid $green3;
+  }
+}
